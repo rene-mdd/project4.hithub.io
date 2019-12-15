@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+section {
+ width: 100%;
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+}
+
+.div1 {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  border-top: 1px solid rgb(190, 190, 190);
+  
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+}
+.steve {
+  display: flex;
+  justify-content: space-between;
+  align-content: center; 
+}
+
+.written {
+ color: gray;
+}
+
+.button-div {
+align-self: center;
+}
+
+.div-image {
+  width: 150px;
+  height: 150px;
+}
+
+.div-center {
+  width: 70%;
+}
+
+.steve-h {
+  font-size: 1.8em;
+  font-weight: 800;
+  margin: 0px 10px 10px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+@media (max-width: 630px) {
+  .div1 {
+    flex-direction: column;
+    align-content: center;
+  }
+  .div-center {
+    flex-direction: column;
+    align-content: center;
+  }
+  .written {
+    text-align: center;
+  }
+  .div-image {
+    align-self: center;
+  }
+  .steve {
+    justify-content: center;
+  }
+  
+}
+@media (max-width: 400px) {
+  .steve {
+    flex-wrap: wrap;
+  }
+}
+button {
+  color: rgb(114, 180, 108);
+  background-color: white;
+  border: 1px solid rgb(114, 180, 108);
+  font-size: 25px;
+  padding: 10px 20px;
+}
+.div-image, .div-center {
+  padding-top: 30px;
+}
+.back {
+  background-color: rgb(71, 77, 71);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+    height: 45px;
+}
